@@ -11,7 +11,7 @@ This is only gonna work if the school-website is made by/with the Aula-Template.
 
 # Run :
 ```
-python3 main.py --school SCHOOL --email EMAIL
+python3 main.py --school <school> --email <email>
 ```
 
 ~ Binary.club
