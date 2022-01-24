@@ -2,7 +2,7 @@ import requests
 import random
 from colorama import Fore
 
-""" Send e-mails til lære igennem specificeret skole-hjemmesider der bruger Aula, anonymt. """ 
+""" Send teachers emails through specified school websites using Aula, anonymously. """ 
 
 # CONSTANTS
 SCHOOL = ''
