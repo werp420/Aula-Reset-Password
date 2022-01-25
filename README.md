@@ -3,6 +3,7 @@ This only works in Denmark!
 Send e-mails to teachers with specified school-website using Aula, anonymously.
 
 Find your school via the attached xml file.
+If Network-errors, refill the proxies.txt file.
 
 # Documentation :
 This is only gonna work if the school-website is made by/with the Aula-Template.
