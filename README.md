@@ -6,6 +6,7 @@ Find your school via the attached xml file.
 
 # Documentation :
 This is only gonna work if the school-website is made by/with the Aula-Template.
+
 For help :
 ```
 python3 main.py -h
