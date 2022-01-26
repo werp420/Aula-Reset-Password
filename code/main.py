@@ -1,3 +1,5 @@
+# Author: @wrec_ug
+
 import requests, random
 from colorama import Fore
 from argparse import ArgumentParser
